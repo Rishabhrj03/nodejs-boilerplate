@@ -1,0 +1,26 @@
+https://www.section.io/engineering-education/a-raw-nodejs-rest-api-without-frameworks-such-as-express/
+
+The first argument of the res.writeHead() method is the status code, 200 means that all is OK, the second argument is an object containing the response headers.
+res.writeHead(200, {'Content-Type': 'text/html'});
+
+req,method , req.url
+
+res.end in string format
+	
+req.params, req.query
+
+Url {
+  protocol: null,
+  slashes: null,
+  auth: null,
+  host: null,
+  port: null,
+  hostname: null,
+  hash: null,
+  search: '?id=2&work=ggyuyuuy',
+  query: 'id=2&work=ggyuyuuy',
+  pathname: '/api/todo',
+  path: '/api/todo?id=2&work=ggyuyuuy',
+  href: '/api/todo?id=2&work=ggyuyuuy'
+} [Object: null prototype] { id: '2', work: 'ggyuyuuy' }
+
