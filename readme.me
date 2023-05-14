@@ -24,3 +24,19 @@ Url {
   href: '/api/todo?id=2&work=ggyuyuuy'
 } [Object: null prototype] { id: '2', work: 'ggyuyuuy' }
 
+For CORS https://www.prowaretech.com/articles/current/javascript/node-js/enable-cors-without-express#!
+
+  const headers = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+      "Access-Control-Max-Age": 2592000, // 30 days
+      /** add other headers as per requirement */
+    };
+
+    if (req.method === "OPTIONS") {
+      res.writeHead(204, headers);
+
+What is the Preflight request?
+A preflight request is a "light" request sent by the browser before the actual request. The preflight request is an HTTP OPTIONS request without a body and contains information about which HTTP method will be used and whether any additional custom HTTP headers will be present. 
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP
